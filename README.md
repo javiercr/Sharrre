@@ -8,41 +8,41 @@ More information on [Sharrre] (http://sharrre.com/#demos)
 Usage
 ===
 
-	$('#sharrre').sharrre({
-    share: {
-      googlePlus: true,
-      facebook: true,
-      twitter: true
-    },
-    url: 'http://sharrre.com'
-  });
-
-Example
-===
-    
-  <div id="demo1" data-title="sharrre" data-url="http://sharrre.com" ></div>
-  $(document).ready(function(){
-    $('#demo1').sharrre({
+    $('#sharrre').sharrre({
       share: {
         googlePlus: true,
         facebook: true,
-        twitter: true,
-        delicious: true
+        twitter: true
       },
-      buttons: {
-        googlePlus: {size: 'tall'},
-        facebook: {layout: 'box_count'},
-        twitter: {count: 'vertical'},
-        delicious: {size: 'tall'}
-      },
-      hover: function(api, options){
-        $(api.element).find('.buttons').show();      
-      },
-      hide: function(api, options){
-        $(api.element).find('.buttons').hide();
-      }
+      url: 'http://sharrre.com'
     });
-  });
+    
+Example
+===
+    
+    <div id="demo1" data-title="sharrre" data-url="http://sharrre.com" ></div>
+    $(document).ready(function(){
+      $('#demo1').sharrre({
+        share: {
+          googlePlus: true,
+          facebook: true,
+          twitter: true,
+          delicious: true
+        },
+        buttons: {
+          googlePlus: {size: 'tall'},
+          facebook: {layout: 'box_count'},
+          twitter: {count: 'vertical'},
+          delicious: {size: 'tall'}
+        },
+        hover: function(api, options){
+          $(api.element).find('.buttons').show();      
+        },
+        hide: function(api, options){
+          $(api.element).find('.buttons').hide();
+        }
+      });
+    });
 
   See example on [official website] (http://sharrre.com/#demos)
 	
